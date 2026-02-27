@@ -265,7 +265,7 @@ export function OrgaoDetailClient({ members, availableYears, currentYear }: Orga
                     width={35}
                   />
                   <Tooltip
-                    formatter={(value: number) => formatCurrency(value)}
+                    formatter={(value) => (value == null ? "-" : formatCurrency(value as number))}
                     labelFormatter={(label) => `Estado: ${label}`}
                     contentStyle={{ fontSize: 12 }}
                   />
