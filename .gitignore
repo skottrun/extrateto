@@ -41,7 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 # database
-/data/*.db
+# /data/*.db --- IGNORE ---
 /data/*.db-wal
 /data/*.db-shm
 
